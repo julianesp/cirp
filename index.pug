@@ -1,0 +1,83 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title CIRP
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/index.css">
+
+        //- logo pestaña
+        link(rel="icon", href="./img/favicon.ico")
+    body
+        i.icon-menu.burger-button#burger-menu
+
+        header.header 
+            .enlaces 
+                button(onclick="inicio()") Inicio 
+            .enlaces 
+                button(onclick="documentos()") Documentación
+            .enlaces 
+                button(onclick="nosotros()") Nosotros
+
+        main 
+            section.logo 
+                img(src="./img/logo.jpg", alt="")
+            
+            section.presentacion 
+                ul.slider 
+                    li#slide1
+                        img(src="./img/1.jpeg", alt="") 
+                    li#slide2
+                        img(src="./img/2.jpeg", alt="") 
+                    li#slide3
+                        img(src="./img/3.jpeg", alt="") 
+                    li#slide4
+                        img(src="./img/4.jpeg", alt="") 
+                    li#slide5
+                        img(src="./img/5.jpeg", alt="") 
+                    li#slide6
+                        img(src="./img/6.jpeg", alt="") 
+
+                ul.menu 
+                    li
+                        a(href="#slide1") 1
+                    li
+                        a(href="#slide2") 2
+                    li
+                        a(href="#slide3") 3
+                    li
+                        a(href="#slide4") 4
+                    li
+                        a(href="#slide5") 5
+                    li
+                        a(href="#slide6") 6
+
+            section.servicios 
+                h2 Servicios terapéuticos 
+
+                article.tipos 
+                    .fisio 
+                        h3 Fisioterapia
+                        img(src="./img/fisio/1.jpg", alt="")
+                    .fisio 
+                        h3 Fonoaudiología
+                        img(src="./img/fono.jpeg", alt="")
+                    .fisio 
+                        h3 Terapia Ocupacional
+                        img(src="./img/ocupacional.jpg", alt="")
+                    .fisio 
+                        h3 Psicología
+                        img(src="./img/psico.jpg", alt="")
+
+        footer 
+            .info-contacto 
+                p Línea de atención: 314-725-4774
+                p Email: rehabilitarcirp@gmail.com
+                p Dirección: Calle 15 16 Crr 14 - Barrio "El triunfo
+                p Sibundoy, Putumayo
+
+        script(src="./js/links.js") 

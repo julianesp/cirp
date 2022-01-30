@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIRP</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <i class="icon-menu burger-button" id="burger-menu"></i>
+    <header class="header">
+
+        <div class="inicio">
+            <a href="index.html">Inicio</a>
+        </div>
+
+        <div class="nosotros">
+            <a href="nosotros.html">Sobre nosotros</a>
+        </div>
+
+        <div class="servicios">
+            <a href="servicios.html">Servicios</a>
+        </div>
+        <div class="documentacion">
+            <a href="documentos.html">Documentaci&oacute;n</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="logo">
+            <img src="../img/cirp.jpeg" alt="Logo del centro de rehabilitacion">
+        </section>
+
+        <h2>main</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores quos, magni neque exercitationem fuga id possimus similique libero quas animi porro debitis obcaecati voluptas ullam dolor nesciunt eos sapiente error.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores quos, magni neque exercitationem fuga id possimus similique libero quas animi porro debitis obcaecati voluptas ullam dolor nesciunt eos sapiente error.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores quos, magni neque exercitationem fuga id possimus similique libero quas animi porro debitis obcaecati voluptas ullam dolor nesciunt eos sapiente error.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores quos, magni neque exercitationem fuga id possimus similique libero quas animi porro debitis obcaecati voluptas ullam dolor nesciunt eos sapiente error.</p>
+    </main>
+
+    <footer>
+        <h2>footer</h2>
+    </footer>
+
+    <script>
+        const header = document.querySelector('.header');
+        const burgerMenu = document.querySelector('#burger-menu');
+
+        burgerMenu.addEventListener('click', hideShow);
+
+        function hideShow() {
+            if (header.classList.contains('is-active')) {
+                header.classList.remove('is-active');
+
+            } else {
+                header.classList.add('is-active');
+            }
+        }
+    </script>
+</body>
+
+</html>

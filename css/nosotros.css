@@ -1,0 +1,195 @@
+/* icono de menu  */
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?3ot2jt');
+    src: url('../fonts/icomoon.eot?3ot2jt#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?3ot2jt') format('truetype'), url('../fonts/icomoon.woff?3ot2jt') format('woff'), url('../fonts/icomoon.svg?3ot2jt#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+    content: "\e9bd";
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    background-color: #F5F8F3;
+}
+
+.icon-menu {
+    cursor: pointer;
+}
+
+.burger-button {
+    width: 40px;
+    height: 40px;
+    top: 5px;
+    right: 5px;
+    line-height: 40px;
+    border-radius: 50%;
+    background-color: #a9cf46;
+    color: #fff;
+    display: block;
+    text-align: center;
+    position: fixed;
+    z-index: 20;
+}
+
+.header {
+    width: 70vw;
+    text-align: center;
+    background-color: rgba(16, 152, 243, .7);
+    top: 0;
+    bottom: 0;
+    right: -100vw;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    transition: .3s;
+}
+
+.header.is-active {
+    right: 0;
+}
+
+.header .enlaces button {
+    width: 150px;
+    height: 50px;
+    min-width: 150px;
+    max-width: 300px;
+    display: flex;
+    background-color: #a9cf46;
+    border-color: #fff;
+    box-shadow: 5px 5px 5px #baba;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.header .enlaces:active {
+    transform: scale(.8);
+    transition: .8s;
+}
+
+.header .enlaces button a {
+    width: 100%;
+    color: #000;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 70px;
+}
+
+.logo {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(100deg, #6FC0F9 70%, #89daf8 100%);
+    padding-bottom: 30px;
+}
+
+.logo img {
+    width: 200px;
+    border: 1px solid #bababa;
+    border-radius: 10px;
+    box-shadow: 2px 3px 5px #fff;
+    margin-top: 20px;
+    animation-name: logo;
+    animation-duration: 1.5s;
+    transition: 1s;
+}
+
+@keyframes logo {
+    0% {
+        transform: translateX(-200px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+/* ------ mision, vision, objetivos---------- */
+
+.mision {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0;
+    padding: 0 20px;
+}
+
+.mision .titulo {
+    color: #3DB8F5;
+    font-size: 1.05rem;
+    letter-spacing: 2px;
+    line-height: 50px;
+    border: 2px solid #3DB8F5;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+    transition: .7s;
+}
+
+.mision .titulo:hover {
+    color: #fff;
+    background: #3DB8F5;
+}
+
+.mision .parrafo p {
+    line-height: 25px;
+    text-align: justify;
+}
+
+.mision .parrafo ul li {
+    line-height: 35px;
+    font-weight: 600;
+}
+
+footer {
+    width: 100vw;
+    height: auto;
+    background: linear-gradient(100deg, #6FC0F9 70%, #89daf8 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+footer .info-contacto {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-self: center;
+}
+
+footer .info-contacto p {
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
