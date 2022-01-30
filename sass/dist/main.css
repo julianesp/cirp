@@ -267,14 +267,18 @@ footer {
 }
 footer .info-contacto {
   display: flex;
+  align-items: center;
   flex-direction: column;
   width: 90%;
-  justify-self: center;
 }
 footer .info-contacto p {
   color: #fff;
   font-weight: 700;
   letter-spacing: 2px;
+}
+footer .info-contacto img {
+  width: 200px;
+  margin-top: 20px;
 }
 
 @media screen and (min-width: 631px) {
