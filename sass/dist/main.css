@@ -145,7 +145,6 @@ body {
 .presentacion .slider li img {
   width: 100%;
   height: inherit;
-  border-radius: 10px;
   object-fit: cover;
 }
 .presentacion .slider li:first-child {
@@ -167,20 +166,21 @@ body {
   text-decoration: none;
   background-color: #3DB8F5;
   border-radius: 50%;
-  height: 15px;
-  width: 15px;
+  height: 5px;
+  width: 5px;
   padding: 10px;
+  margin-right: 20px;
   line-height: 15px;
   transition: 0.5s;
-  animation-name: color;
-  animation-duration: 1s;
+  animation-name: aparecer;
+  animation-duration: 1.5s;
 }
-@keyframes color {
+@keyframes aparecer {
   from {
-    transform: translateY(500px);
+    transform: scale(0.6);
   }
   to {
-    transform: translateY(0);
+    transform: scale(1);
   }
 }
 
@@ -287,8 +287,6 @@ footer .info-contacto img {
   margin-top: 20px;
   margin-bottom: 20px;
   border-radius: 10px;
-  perspective: 1000px;
-  -webkit-box-reflect: below 10px;
 }
 footer .socialmedia img {
   position: fixed;

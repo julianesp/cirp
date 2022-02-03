@@ -4,6 +4,7 @@ function inicio() {
 
 function documentos() {
     location.href = "../html/documentos.html"
+    location.href = '../html/documentos.html'
 }
 
 function nosotros() {
