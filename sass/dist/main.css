@@ -68,7 +68,7 @@ body {
 .header.is-active {
   right: 0;
 }
-.header .enlaces button {
+.header .enlaces a {
   width: 150px;
   height: 50px;
   background-color: rgba(16, 152, 243, 0.7);
@@ -82,13 +82,7 @@ body {
   margin: 20px 0;
   color: #fff;
   font-size: 1.1rem;
-}
-.header .enlaces button a {
-  color: #0063a9;
-  font-size: 1rem;
-  font-weight: bolder;
   text-decoration: none;
-  line-height: 70px;
 }
 .header .enlaces:active {
   transform: scale(0.8);
