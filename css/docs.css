@@ -135,10 +135,26 @@ body {
     text-align: center;
 }
 
+.documentos .informes .info .estados {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.documentos .informes .info .estados .article {
+    display: flex;
+    flex-direction: column;
+}
+
+.documentos .informes .info .estados .article:nth-child(1) {
+    display: flex;
+}
+
 .documentos .informes .info button {
     width: 200px;
+    height: 150px;
     padding: 20px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     border-radius: 10px;
     cursor: pointer;
 }
