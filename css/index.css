@@ -52,7 +52,7 @@ body {
     position: fixed;
     z-index: 20;
 }
-
+/* 
 .header {
     width: 70vw;
     text-align: center;
@@ -99,7 +99,7 @@ body {
     font-weight: bold;
     text-decoration: none;
     line-height: 70px;
-}
+} */
 
 .logo {
     position: relative;
