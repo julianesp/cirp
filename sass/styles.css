@@ -66,10 +66,8 @@ body {
   position: relative;
   display: flex;
   justify-content: center;
-  -o-object-fit: contain;
-     object-fit: contain;
   height: 400px;
-  width: 900px;
+  width: 1200px;
   text-align: center;
   margin: 0 auto;
   padding: 0;
@@ -84,8 +82,8 @@ body {
 .presentacion .slider li img {
   width: 100%;
   height: inherit;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .presentacion .slider li:first-child {
   opacity: 1;
