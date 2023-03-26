@@ -8,7 +8,10 @@
     <title>Documentos</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="../css/docs.css">
+    <link rel="stylesheet" href="../sass/header.css">
+
     <link rel="icon" href="../img/favicon.ico">
 
     <!-- logo para pestaña -->
@@ -16,59 +19,57 @@
 </head>
 
 <body>
-    <i class="icon-menu burger-button" id="burger-menu"></i>
     <header class="header">
+        <div class="contenedor-enlaces">
+            <div class="logos">
+                <img src="../assets/img/logo.jpg" alt="Logo CIRP">
+            </div>
 
-        <div class="enlaces">
-            <button>
+            <div class="enlaces">
                 <a href="../index.html">Inicio</a>
-            </button>
-        </div>
 
-        <div class="enlaces">
-            <button>
-                <a href="documentos.html">Documentaci&oacute;n</a>
-            </button>
-        </div>
-        <div class="enlaces">
-            <button>
-                <a href="nosotros.html">Nosotros</a>
-            </button>
+                <a href="../html/documentos.html">Documentación</a>
+
+                <a href="../html/nosotros.html">Nosotros</a>
+            </div>
         </div>
     </header>
 
     <main>
-        <section class="logo">
-            <img src="../assets/img/logo.jpg" alt="">
-        </section>
-
         <section class="documentos">
-            <article class="informes">
+            <section class="informes">
                 <div class="info">
                     <div class="estados">
                         <article>
                             <h2>Estados financieros 2020</h2>
-                            <button>
-                                <a href="../docs/estado.pdf" target="_blank">Ver estados financieros 2020</a>
-                            </button>
 
+                            <a href="../docs/estado.pdf" target="_blank">
+                                <button>Ver</button>
+                            </a>
                         </article>
+
                         <article>
                             <h2>Estados financieros 2021</h2>
 
-                            <button>
-                                <a href="../docs/Estado de resultados.pdf" target="_blank">Estado de resultados</a>
-                            </button>
-                            <button>
-                                <a href="../docs/Estado de situacion financiera.pdf" target="_blank">Estado de situación financiera</a>
-                            </button>
+                            <a href="../docs/Estado de resultados.pdf" target="_blank">
+                                <p>Estado de resultados </p>
+                                <button>Ver</button>
+                            </a>
                         </article>
-                    </div>
-                    <!-- <iframe src="../docs/estado.pdf" frameborder="0"></iframe> -->
-                </div>
-            </article>
 
-        </section>
+                        <article>
+                            <a href="../docs/Estado de situacion financiera.pdf" target="_blank">
+                                <p>Estado de situación financiera</p>
+
+                                <button>Ver</button>
+                            </a>
+                        </article>
+
+                    </div>
+                </div>
+                <section />
+
+            </section>
     </main>
 
     <footer>
@@ -80,21 +81,6 @@
         </div>
     </footer>
 
-    <script>
-        const header = document.querySelector('.header');
-        const burgerMenu = document.querySelector('#burger-menu');
-
-        burgerMenu.addEventListener('click', hideShow);
-
-        function hideShow() {
-            if (header.classList.contains('is-active')) {
-                header.classList.remove('is-active');
-
-            } else {
-                header.classList.add('is-active');
-            }
-        }
-    </script>
 </body>
 
 </html>

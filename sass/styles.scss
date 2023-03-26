@@ -35,10 +35,12 @@ body {
     bottom: 0;
 
     z-index: 1000;
-    width: 100vw;
+    /* width: 100vw; */
     height: 60px;
 
-    background-color: rgba(173, 207, 230, 0.9);
+    padding: 0 30px;
+
+    background-color: rgba(72, 171, 238, 0.9);
 
     & .contenedor-enlaces {
         display: flex;
@@ -55,6 +57,8 @@ body {
 
             margin-left: 50px;
 
+            border-radius: 20px;
+
             & img {
                 width: 100px;
             }
@@ -62,40 +66,32 @@ body {
 
         & .enlaces {
             display: flex;
-            justify-content: right;
+
+            width: auto;
+            gap: 0 20px;
+            /* justify-content: right; */
 
             & a {
-                width: 150px;
+                width: auto;
                 height: 50px;
-                background-color: rgba(16, 152, 243, 0.7);
+                /* background-color: rgba(16, 152, 243, 0.7); */
                 border: none;
-                border-radius: 10px;
-                min-width: 150px;
-                max-width: 300px;
+                
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                color: #fff;
-                font-size: 1.1rem;
-                text-decoration: none;
-                // & a {
-                //     color: #0063a9;
-                //     font-size: 1rem;
-                //     font-weight: bolder;
-                //     text-decoration: none;
-                //     line-height: 70px;
-                // }
 
-                &:nth-child(2) {
-                    margin-right: 50px;
-                    margin-left: 50px;
-                }
+                color: #fff;
+                font-size: 1.2rem;
+                text-decoration: underline;
+                letter-spacing: 5px;
+
             }
 
-            &:active {
+            /* &:active {
                 transform: scale(0.8);
                 transition: 0.8s;
-            }
+            } */
         }
     }
 }
@@ -121,8 +117,13 @@ body {
 
 .presentacion {
     position: relative;
-    width: 1040px;
+
+    margin: 10px auto 0;
+    
     overflow: hidden;
+
+    width: 90%;
+    border-radius: 50px;
     
     & .slider {
         position: relative;
@@ -131,13 +132,16 @@ body {
         align-items: center;
 
         width: 500%;
-        height: auto;
+        height: 250px;
         
-        /* animation: slider; */
-        animation-duration: 24s;
+        animation: slider;
+        animation-duration: 18s;
         animation-direction: alternate;
+        animation-iteration-count: infinite;
 
-        border: 2px solid red;
+        transicion: 1s ease-in-out;
+
+        /* border: 2px solid red; */
         
         & li {
             list-style: none;
@@ -145,11 +149,11 @@ body {
             transition: opacity 0.5s;
 
             & img {
+                align-self: strech;
                 width: 100%;
-                height: inherit;
-                width: inherit;
-                height: 350px;
-                object-fit: cover;
+                /* height: 90px; */
+                object-fit: contain;
+                
             }
 
             &:first-child {
@@ -166,53 +170,20 @@ body {
         0% {margin-left: 0%;}
         20% {margin-left: 0%;}
 
-        25% {margin-left: -50%;}
-        45% {margin-left: -50%;}
+        21% {margin-left: -100%;}
+        39% {margin-left: -100%;}
 
-        50% {margin-left: -200%;}
-        70% {margin-left: -200%;}
+        40% {margin-left: -200%;}
+        60% {margin-left: -200%;}
 
-        75% {margin-left: -300%;}
-        95% {margin-left: -300%;}
-
+        61% {margin-left: -300%;}
+        80% {margin-left: -300%;}
+        
+        81% {margin-left: -400%;}
+        100% {margin-left: -400%;}
     }
 
-    /* & .menu {
-        // position: relative;
-        text-align: center;
-
-        & li {
-            display: inline-block;
-
-            
-            & a {
-                display: inline-block;
-                color: #fff;
-                text-decoration: none;
-                background-color: #3db8f5;
-                border-radius: 50%;
-                height: 5px;
-                width: 5px;
-                padding: 10px;
-                margin-right: 20px;
-                line-height: 15px;
-                transition: 0.5s;
-                animation-name: aparecer;
-                animation-duration: 1.5s;
-                
-            }
-        }
-    } */
-
-    @keyframes aparecer {
-        from {
-            transform: scale(0.6);
-        }
-
-        to {
-            transform: scale(1);
-        }
-    }
+    
 }
 
 .servicios {
@@ -353,5 +324,11 @@ body {
             width: 50px;
             height: 50px;
         }
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 1023px){
+    body {
+        display: none;
     }
 }
