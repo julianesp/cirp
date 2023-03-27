@@ -1,13 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Oswald', sans-serif;
     margin: 0;
     background-color: #F5F8F3;
+
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* ------ mision, vision, objetivos---------- */
 
 main {
     margin: 0 80px  ;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    margin: 50px 0;
 }
 
 .mision {
@@ -15,8 +30,11 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
     margin: 20px 0;
     padding: 0 20px;
+
+    width: 470px;
 }
 
 .mision .titulo {
@@ -37,7 +55,9 @@ main {
 }
 
 .mision .parrafo {
-    width: 400px;
+    width: 350px;
+    height: 420px;
+
     border: 1px solid #000;
     border-radius: 10px;
     padding: 30px;

@@ -1,9 +1,15 @@
-
+* {
+    margin: 0;
+    padding: 0;
+}
 
 body {
     font-family: 'Oswald', sans-serif;
     margin: 0;
     background-color: #F5F8F3;
+
+    padding: 0;
+    box-sizing: border-box;
 }
 
 main {
@@ -22,10 +28,10 @@ main {
 }
 
 .documentos .informes .info .estados {
-    /* display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center; */
+    
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
 
     gap: 0 50px;
@@ -36,10 +42,17 @@ main {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
+    margin-bottom: 50px;
+    
+
+    border: 1px solid #000;
 }
 
-.documentos .informes .info .estados article button {
+.documentos .informes .info .estados article a {
     height: 70px;
+
+    margin-bottom: 50px;
 }
 
 /* .documentos .informes .info .estados .article:nth-child(1) {
