@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../sass/footer.css">
 
     <!-- logo para pestaña -->
-    <link rel="icon" href="../img/favicon.ico">
+    <link rel="icon" href="../assets/img/favicon.ico">
 </head>
 
 <body>
@@ -89,21 +89,6 @@
 
     </footer>
 
-    <script>
-        const header = document.querySelector('.header');
-        const burgerMenu = document.querySelector('#burger-menu');
-
-        burgerMenu.addEventListener('click', hideShow);
-
-        function hideShow() {
-            if (header.classList.contains('is-active')) {
-                header.classList.remove('is-active');
-
-            } else {
-                header.classList.add('is-active');
-            }
-        }
-    </script>
 </body>
 
 </html>

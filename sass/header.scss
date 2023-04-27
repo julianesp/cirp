@@ -1,15 +1,17 @@
 .header {
     position: relative;
+    /* position: fixed; */
     top: 0;
     bottom: 0;
-
-    z-index: 1000;
-    /* width: 100vw; */
+    
+    width: 100vw;
     height: 60px;
 
-    padding: 0 30px;
-
     background-color: rgba(72, 171, 238, 0.9);
+
+    
+
+    z-index: 1000;
 
     & .contenedor-enlaces {
         display: flex;
@@ -54,14 +56,11 @@
                 color: #fff;
                 font-size: 1.2rem;
                 text-decoration: underline;
-                letter-spacing: 5px;
+                /* letter-spacing: 5px; */
 
             }
-
-            /* &:active {
-                transform: scale(0.8);
-                transition: 0.8s;
-            } */
         }
     }
+
+    
 }

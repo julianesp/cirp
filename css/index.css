@@ -1,3 +1,5 @@
+@import '../sass/footer.scss';
+
 /* icono de menu  */
 
 @font-face {
@@ -320,86 +322,5 @@ li {
     }
     100% {
         transform: scale(1);
-    }
-}
-
-footer {
-    width: 100vw;
-    height: auto;
-    background: linear-gradient(100deg, #6FC0F9 70%, #89daf8 100%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-footer .info-contacto {
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    justify-self: center;
-}
-
-footer .info-contacto p {
-    color: #fff;
-    font-weight: 700;
-    letter-spacing: 2px;
-}
-
-@media screen and (min-width: 631px) {
-    .header {
-        width: 25vw;
-    }
-    .header .enlaces {
-        display: block;
-    }
-    .header .enlaces button {
-        width: 190px;
-        height: 50px;
-        display: flex;
-        background-color: #fff;
-        border-color: #bababa;
-        align-items: center;
-        justify-content: center;
-        margin: 20px 0;
-        border-radius: 10px;
-    }
-    .header .enlaces:active {
-        transform: scale(.8);
-        transition: .8s;
-    }
-    .header .enlaces button a {
-        width: 100%;
-        color: #000;
-        font-size: 1.3rem;
-        font-weight: bold;
-        text-decoration: none;
-        line-height: 70px;
-    }
-    .servicios {
-        display: block;
-        text-align: center;
-    }
-    .servicios .tipos {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-items: center;
-        width: 100%;
-        margin-top: 40px;
-    }
-    .servicios .tipos .fisio {
-        display: block;
-    }
-    .servicios h2 {
-        margin: 0 auto;
-    }
-    footer .info-contacto {
-        text-align: center;
-    }
-    footer .logo-footer {
-        text-align: center;
-    }
-    footer .logo-footer img {
-        width: 200px;
     }
 }
