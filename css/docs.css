@@ -82,11 +82,9 @@ main {
 .documentos .estados h2 {
     font-size: 1.2rem;
 }
-/* 
-@media screen and (min-width: 768px) {
-    .documentos .informes .info .estados {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
+
+@media screen and (max-width: 1023px){
+    body {
+        display: none;
     }
-} */
+}
