@@ -28,26 +28,36 @@ main {
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
-
-    /* width: 80%; */
     gap: 50px;
 
+    padding: 20px;
+
+    width: 80%;
+    height: 250px;
+
+    border: 1px solid #000;
+    border-radius: 10px;
 }
 
 .documentos .estados {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    
     flex-direction: column;
 
     padding: 20px;
 
-    height: 190px;
-    width: 250px;
+    height: 180px;
+    width: 120px;
 
     border: 2px solid rgb(72, 171, 238);;
     border-radius: 15px;
     box-shadow: 15px 15px 10px #baba;
+}
+
+.documentos .estados h2 {
+    text-align: center;
 }
 
 .documentos .estados .estados__tipo {
@@ -57,9 +67,14 @@ main {
     flex-direction: column;
 }
 
+.documentos .estados .estados__tipo p {
+    font-size: .8rem;
+    text-align: center;
+}
+
 .documentos .estados a button {
     width: 80px;
-    height: 40px;
+    height: 25px;
 
     transition: .3s ease-out;
 
@@ -69,7 +84,7 @@ main {
 
     color: #fff;
 
-    font-size: 1.1rem;
+    font-size: .7rem;
     
 }
 
@@ -80,7 +95,7 @@ main {
 }
 
 .documentos .estados h2 {
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 @media screen and (max-width: 1023px){
