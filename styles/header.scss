@@ -1,12 +1,15 @@
 .header {
     position: relative;
+    /* position: fixed; */
     top: 0;
     bottom: 0;
     
     width: 100vw;
     height: 60px;
 
-    background-color: rgba(72, 171, 238, 0.9);   
+    background-color: rgba(72, 171, 238, 0.9);
+
+    
 
     z-index: 1000;
 

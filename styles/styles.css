@@ -1,5 +1,4 @@
-@charset "UTF-8";
-@import url(/home/neuraidev/Documentos/sites/cirp/sass/header.css);
+@import url(/home/neuraidev/Documentos/sites/cirp/styles/header.css);
 .footer {
   position: relative;
   display: -webkit-box;
@@ -53,12 +52,15 @@
 body {
   position: relative;
   font-family: "Oswald", sans-serif;
+  /* margin: 65px 0; */
+  /* padding: 0; */
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   overflow-x: hidden;
 }
 
 .logo {
+  width: 100vw;
   height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -74,6 +76,7 @@ body {
 }
 
 .logo img {
+  width: 150px;
   height: 45px;
   border: 1px solid #bababa;
   border-radius: 7px;
@@ -84,8 +87,10 @@ body {
 
 .presentacion {
   position: relative;
+  margin: 10px auto 0;
   overflow: hidden;
-  width: 100vw;
+  width: 90%;
+  border-radius: 50px;
 }
 
 .presentacion .slider {
@@ -100,7 +105,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   width: 500%;
-  height: 100vh;
+  height: 250px;
   -webkit-animation: slider;
           animation: slider;
   -webkit-animation-duration: 18s;
@@ -109,7 +114,9 @@ body {
           animation-direction: alternate;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-  transicion: 1s ease-in-out;
+  -webkit-transition: 1s ease-in-out all;
+  transition: 1s ease-in-out all;
+  /* border: 2px solid red; */
 }
 
 .presentacion .slider li {
@@ -120,8 +127,11 @@ body {
 }
 
 .presentacion .slider li img {
+  -ms-flex-item-align: strech;
+      -ms-grid-row-align: strech;
+      align-self: strech;
   width: 100%;
-  height: 100%;
+  /* height: 90px; */
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -216,7 +226,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 30px;
-  margin: 50px;
+  margin: 100px;
   /* height: auto; */
   border: 3px solid #baba;
   border-radius: 20px;
@@ -248,12 +258,9 @@ body {
   width: 800px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-transition: .5s ease-in all;
-  transition: .5s ease-in all;
 }
 
 .servicios .tipos .fisio {
-  position: relative;
   width: 350px;
   height: 280px;
   display: -webkit-box;
@@ -292,45 +299,6 @@ body {
           animation-duration: 1.5s;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
-}
-
-.servicios .tipos .fisio .descripcion {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  /* Mantenemos siempre flex */
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: absolute;
-  top: 60px;
-  left: 0;
-  width: 89%;
-  height: 57.5%;
-  background-color: rgba(58, 57, 57, 0.95);
-  color: #fff;
-  font-size: 1.2rem;
-  font-weight: 600;
-  text-align: center;
-  padding: 20px;
-  border-radius: 10px;
-  -webkit-box-shadow: 5px 10px 10px #bababa;
-          box-shadow: 5px 10px 10px #bababa;
-  text-decoration: none;
-  /* Nuevas propiedades para la transición */
-  opacity: 0;
-  visibility: hidden;
-  /* En lugar de display: none */
-  -webkit-transition: opacity 0.5s ease, visibility 0.5s ease;
-  transition: opacity 0.5s ease, visibility 0.5s ease;
-}
-
-.servicios .tipos .fisio:hover .descripcion {
-  opacity: 0.7;
-  visibility: visible;
 }
 
 @-webkit-keyframes hundir {

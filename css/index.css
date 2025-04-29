@@ -285,6 +285,7 @@ li {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .servicios .tipos .fisio h3 {
@@ -323,4 +324,26 @@ li {
     100% {
         transform: scale(1);
     }
+}
+
+.servicios .tipos .fisio .descripcion {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    transform: translateY(20px);
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    z-index: 2;
+}
+
+.servicios .tipos .fisio:hover .descripcion {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
 }
