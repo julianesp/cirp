@@ -1,105 +1,104 @@
 /* @import '../sass/footer.scss'; */
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: 'Oswald', sans-serif;
-    margin: 0;
-    background-color: #F5F8F3;
+  font-family: "Oswald", sans-serif;
+  margin: 0;
+  background-color: #f5f8f3;
 
-    padding: 0;
-    box-sizing: border-box;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    height: 70vh;
-    /* width: 80%; */
+  height: 70vh;
+  /* width: 80%; */
 }
 
 .documentos {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 50px;
 
-    padding: 20px;
+  padding: 20px;
 
-    width: 80%;
-    height: 250px;
+  width: 80%;
+  height: 250px;
 
-    border: 1px solid #000;
-    border-radius: 10px;
+  border: 1px solid #000;
+  border-radius: 10px;
 }
 
 .documentos .estados {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 
-    padding: 20px;
+  flex-direction: column;
 
-    height: 180px;
-    width: 120px;
+  padding: 20px;
 
-    border: 2px solid rgb(72, 171, 238);;
-    border-radius: 15px;
-    box-shadow: 15px 15px 10px #baba;
+  height: 180px;
+  width: 120px;
+
+  border: 2px solid rgb(72, 171, 238);
+  border-radius: 15px;
+  box-shadow: 15px 15px 10px #baba;
 }
 
 .documentos .estados h2 {
-    text-align: center;
+  text-align: center;
 }
 
 .documentos .estados .estados__tipo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .documentos .estados .estados__tipo p {
-    font-size: .8rem;
-    text-align: center;
+  font-size: 0.8rem;
+  text-align: center;
 }
 
 .documentos .estados a button {
-    width: 80px;
-    height: 25px;
+  width: 80px;
+  height: 25px;
 
-    transition: .3s ease-out;
+  transition: 0.3s ease-out;
 
-    border: none;
-    background-color: rgb(72, 171, 238);
-    border-radius: 20px;
+  border: none;
+  background-color: rgb(72, 171, 238);
+  border-radius: 20px;
 
-    color: #fff;
+  color: #fff;
 
-    font-size: .7rem;
-    
+  font-size: 0.7rem;
 }
 
 .documentos .estados a button:hover {
-    /* transition: .5s ease-out; */
-    transform: scale(.85);
-    cursor: pointer;
+  /* transition: .5s ease-out; */
+  transform: scale(0.85);
+  cursor: pointer;
 }
 
 .documentos .estados h2 {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
-@media screen and (max-width: 1023px){
-    body {
-        display: none;
-    }
+@media screen and (max-width: 1023px) {
+  body {
+    /* display: none; */
+  }
 }
