@@ -3,57 +3,69 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   font-family: "Oswald", sans-serif;
   margin: 0;
   background-color: #f5f8f3;
-
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 main {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-
-  height: 70vh;
-  /* width: 80%; */
+  min-height: 70vh;
+  padding: 40px 20px;
+  width: 100%;
+  max-width: 100vw;
+  box-sizing: border-box;
 }
 
 .documentos {
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  align-items: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 50px;
-
-  padding: 20px;
-
-  width: 80%;
-  height: 250px;
-
-  border: 1px solid #000;
+  gap: 30px;
+  padding: 40px 20px;
+  width: 100%;
+  max-width: 1200px;
+  min-height: auto;
+  /* border: 1px solid #000; */
   border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.documentos h1 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 2rem;
 }
 
 .documentos .estados {
   display: flex;
   align-items: center;
   justify-content: space-around;
-
   flex-direction: column;
-
   padding: 20px;
+  width: 220px;
+  height: 200px;
 
-  height: 180px;
-  width: 120px;
-
+  min-width: 200px;
+  max-width: 150px;
   border: 2px solid rgb(72, 171, 238);
   border-radius: 15px;
-  box-shadow: 15px 15px 10px #baba;
+  box-shadow: 15px 15px 10px rgba(91, 86, 86, 0.3);
+  box-sizing: border-box;
+  flex-shrink: 0;
 }
 
 .documentos .estados h2 {
@@ -68,13 +80,19 @@ main {
 }
 
 .documentos .estados .estados__tipo p {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   text-align: center;
 }
 
+/* .documentos .estados a {
+  font-size: 1.2rem;
+} */
+
 .documentos .estados a button {
-  width: 80px;
-  height: 25px;
+  margin-top: 10px;
+
+  width: 150px;
+  height: 35px;
 
   transition: 0.3s ease-out;
 
@@ -84,12 +102,12 @@ main {
 
   color: #fff;
 
-  font-size: 0.7rem;
+  font-size: 0.8rem;
 }
 
 .documentos .estados a button:hover {
   /* transition: .5s ease-out; */
-  transform: scale(0.85);
+  transform: scale(0.90);
   cursor: pointer;
 }
 
@@ -97,8 +115,89 @@ main {
   font-size: 1rem;
 }
 
-@media screen and (max-width: 1023px) {
-  body {
-    /* display: none; */
+/* Responsive Design */
+@media screen and (max-width: 1200px) {
+  main {
+    padding: 30px 15px;
+  }
+
+  .documentos {
+    padding: 30px 15px;
+    gap: 25px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    padding: 20px 10px;
+  }
+
+  .documentos {
+    padding: 20px 15px;
+    gap: 20px;
+  }
+
+  .documentos h1 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  .documentos .estados {
+    width: 110px;
+    min-width: 110px;
+    height: 170px;
+    padding: 15px;
+  }
+
+  .documentos .estados h2 {
+    font-size: 0.9rem;
+  }
+
+  .documentos .estados .estados__tipo p {
+    font-size: 0.7rem;
+  }
+
+  .documentos .estados a button {
+    width: 70px;
+    height: 22px;
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  main {
+    padding: 15px 5px;
+  }
+
+  .documentos {
+    padding: 15px 10px;
+    gap: 15px;
+  }
+
+  .documentos h1 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+
+  .documentos .estados {
+    width: 100px;
+    min-width: 100px;
+    height: 160px;
+    padding: 12px;
+  }
+
+  .documentos .estados h2 {
+    font-size: 0.8rem;
+    line-height: 1.1;
+  }
+
+  .documentos .estados .estados__tipo p {
+    font-size: 0.65rem;
+  }
+
+  .documentos .estados a button {
+    width: 65px;
+    height: 20px;
+    font-size: 0.55rem;
   }
 }
